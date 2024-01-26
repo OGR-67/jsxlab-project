@@ -1,6 +1,6 @@
 {
 	"name": "@jsxlab/local-api",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "",
 	"files": [
 		"dist"
@@ -24,7 +24,7 @@
 		"typescript": "^5.3.3"
 	},
 	"dependencies": {
-		"@jsxlab/local-client": "^1.0.0",
+		"@jsxlab/local-client": "^1.1.0",
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
 		"http-proxy-middleware": "^2.0.6"

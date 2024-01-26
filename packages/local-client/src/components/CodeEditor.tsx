@@ -3,6 +3,8 @@ import MonacoEditor from "@monaco-editor/react";
 import { editor } from "monaco-editor";
 import { useEffect, useRef } from "react";
 import "./CodeEditor.css";
+import { useDispatch } from "react-redux";
+import { dataSaved } from "@/store";
 
 interface CodeEditorProps {
 	initialValue: string;
@@ -26,6 +28,7 @@ const CodeEditor = ({
 	onHeightChange,
 }: CodeEditorProps) => {
 	const editorRef = useRef<IEditor>();
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		if (onHeightChange) {
@@ -42,6 +45,7 @@ const CodeEditor = ({
 	const handleMount = (editor: IEditor) => {
 		editorRef.current = editor;
 		onChange(editor.getValue());
+		dispatch(dataSaved()); // To prevent the "unsaved changes" warning when the editor is mounted
 	};
 
 	const handleChange = (value: string | undefined) => {

@@ -1,0 +1,20 @@
+.editor-wrapper {
+  position: relative;
+  height: 100%;
+  width: calc(
+    100% - 10px
+  ); /* 10px is the width of the horizontal resize handle */
+}
+
+.editor-wrapper .button-format {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.editor-wrapper:hover .button-format {
+  opacity: 1;
+}

@@ -1,0 +1,39 @@
+.editor-loader {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+  background-color: #002b36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor-loader progress {
+  width: 40%;
+}
+
+.diagram-editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: calc(100vh - 9em);
+}
+
+.cell-list-item > .card {
+  border-radius: 0px;
+}
+
+.diagram-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.diagram-placeholder {
+  color: #c1cad2;
+  font-size: 1.05em;
+}

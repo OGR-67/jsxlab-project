@@ -1,0 +1,56 @@
+.token.number {
+  align-items: unset;
+  background-color: unset;
+  border-radius: unset;
+  display: unset;
+  font-size: unset;
+  height: unset;
+  justify-content: unset;
+  margin-right: unset;
+  min-width: unset;
+  padding: unset;
+  text-align: unset;
+  vertical-align: unset;
+}
+
+.text-preview-wrapper {
+  cursor: pointer;
+}
+
+.text-preview-wrapper .wmde-markdown.wmde-markdown-color {
+  background-color: #002b36;
+}
+
+.text-editor {
+  z-index: 2;
+  position: relative;
+}
+
+.text-editor .w-md-editor-bar svg {
+  display: none;
+}
+
+.text-editor .w-md-editor-bar {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+  height: 11px;
+  width: 100%;
+  cursor: row-resize;
+  background-color: #37414b;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  bottom: -1px;
+}
+
+.text-editor ul,
+.text-editor ol {
+  margin-bottom: unset;
+}
+
+.text-editor ul {
+  list-style: disc inside;
+}
+
+.text-editor ol {
+  list-style: decimal inside;
+}

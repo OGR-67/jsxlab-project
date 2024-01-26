@@ -1,0 +1,27 @@
+{
+	"name": "jsxlab",
+	"version": "1.0.0",
+	"description": "",
+	"files": ["dist"],
+	"publishConfig": {
+		"access": "public"
+	},
+	"bin": "dist/index.js",
+	"scripts": {
+		"start": "tsc --watch --preserveWatchOutput",
+		"prepublishOnly": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --minify --define:process.env.NODE_ENV=\\\"production\\\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@jsxlab/local-client": "^1.0.0"
+	},
+	"devDependencies": {
+		"@jsxlab/local-api": "^1.0.0",
+		"commander": "^11.1.0",
+		"@types/node": "^20.11.6",
+		"esbuild": "0.8.26",
+		"typescript": "^5.3.3"
+	}
+}

@@ -1,0 +1,37 @@
+.cell-list {
+  margin: 0 25px 40vh;
+}
+
+.cell-list-title-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin: 1.5em 0 1em;
+}
+
+.cell-list-title-wrapper > h1 {
+  margin: 0 !important;
+}
+
+.react-draggable-transparent-selection .cell-list {
+  margin-bottom: 100vh;
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+
+}
+
+.button-save > svg {
+  font-size: 1.5em;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

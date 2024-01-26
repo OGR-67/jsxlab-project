@@ -1,4 +1,4 @@
-export default `/*[markdown:vgLtj]*/
+export const defaultCells = `/*[markdown:vgLtj]*/
 /*# What is JSXLab?
 JSXLab is the JavaScript and React equivalent of Jupyter notebooks.
 

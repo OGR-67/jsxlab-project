@@ -3,7 +3,7 @@ import express from "express";
 import fs from "fs/promises";
 import path from "path";
 import { cellsStringToData, dataToCellsString } from "../dataFormat/cellsFormat";
-import defaultCells from "../default";
+import { defaultCells } from "../default";
 
 interface LocalApiError {
     code: string;

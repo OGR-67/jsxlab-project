@@ -3,6 +3,7 @@ import express from "express";
 import fs from "fs/promises";
 import path from "path";
 import { cellsStringToData, dataToCellsString } from "../dataFormat/cellsFormat";
+import defaultCells from "../default";
 
 interface LocalApiError {
     code: string;
@@ -23,7 +24,7 @@ export const createCellsRouter = (filename: string, dir: string) => {
             res.status(200).json(cellsStringToData(result));
         } catch (err) {
             if (isLocalApiError(err) && err.code === "ENOENT") {
-                await fs.writeFile(fullPath, "", "utf-8");
+                await fs.writeFile(fullPath, defaultCells, "utf-8");
                 res.json([]);
                 return;
             }

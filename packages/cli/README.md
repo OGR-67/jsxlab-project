@@ -1,6 +1,6 @@
 # JSXLab
 
-This package is a JUPYTER Notebook clone but for JSX.
+This package is a JUPYTER Notebook clone but for JSX.  It allows you to write and execute JSX code in a notebook-like environment. It also supports markdown cells and diagram cells.
 
 ## Features
 

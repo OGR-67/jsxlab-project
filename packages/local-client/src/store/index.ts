@@ -14,7 +14,11 @@ import {
   bundlesReducer,
   createBundle,
 } from "./slices/bundlesSlice";
-import { cellApi } from "./apis/cellsApi";
+import {
+  cellApi,
+  useGetCellsQuery as getCellsQuery,
+  useCreateCellsMutation as createCellsMutation,
+} from "./apis/cellsApi";
 
 export interface RootState {
   cells: CellsState;
@@ -38,6 +42,18 @@ export type AppDispatch = typeof store.dispatch;
 
 // Apis
 export { cellApi };
+export const useGetCellsQuery =
+  process.env.NODE_ENV === "development"
+    ? () => {
+        return { isLoading: false, error: null, data: [] };
+      }
+    : getCellsQuery;
+export const useCreateCellsMutation =
+  process.env.NODE_ENV === "development"
+    ? () => {
+        return [() => {}, { isLoading: false, isError: null, isSuccess: true }];
+      }
+    : createCellsMutation;
 
 // Slices
 export { updateCell, deleteCell, insertCellAfter, moveCell, dataSaved };

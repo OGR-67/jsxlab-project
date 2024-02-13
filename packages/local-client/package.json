@@ -46,5 +46,6 @@
     "redux": "^5.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
-  }
+  },
+  "gitHead": "ba1e7219032750ae72f7690a6a8930bece12f7f6"
 }

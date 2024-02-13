@@ -1,6 +1,6 @@
 {
 	"name": "jsxlab",
-	"version": "1.3.7",
+	"version": "1.3.8",
 	"description": "",
 	"files": [
 		"dist"
@@ -17,10 +17,10 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@jsxlab/local-client": "^1.3.7"
+		"@jsxlab/local-client": "^1.3.8"
 	},
 	"devDependencies": {
-		"@jsxlab/local-api": "^1.3.7",
+		"@jsxlab/local-api": "^1.3.8",
 		"@types/node": "^20.11.6",
 		"commander": "^11.1.0",
 		"esbuild": "0.8.26",
